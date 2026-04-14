@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .box {
+      background-color: rgb(15, 12, 12);
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      align-items: center;
+      justify-content: start;
+      padding: 18% 0px 0px 0px;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn-box{
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      /* background-color: red; */
+    }
+
+    .btns{
+      padding: 30px;
+      border: 1px solid rgb(95, 95, 197);
+      background-color: rgb(204, 176, 50);
+      border-radius: 10px;
+    }
+
+    .btns:hover{
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    .btns:active{
+      opacity: 1;
+    }
+
+    .count{
+      font-size: 30px;
+      color: white;
+      padding: 20px 30px;
+      border: 1px solid rgb(95, 95, 197);
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <div class="btn-box">
+        <button class="btns plus">Plus</button>
+        <button class="btns minus">Minus</button>
+        <button class="btns reset">Reset</button>
+      </div>
+
+      <p class="count">0</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
